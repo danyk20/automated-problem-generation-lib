@@ -91,6 +91,6 @@ normal     - optional attribute
 - max - Maximal value that still can be generated
 - length - Number variable of characters   
 - prohibited - List of values that are excluded
-- challenge_id - ID of the challenge where will be generated flag uploaded 
+- challenge_id - ID of the challenge where will be generated flag uploaded and is ***required*** if valus are generated for personal challenge plugin
 
-> NOTE: challenge_id - required to map flag to correct challenge
+> NOTE: This library will work without challenge_id attribute in the input file. However personal challenge plugin for CTFd requires challenge_id attribute to correctly map flag to challenge.

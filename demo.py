@@ -11,7 +11,7 @@ ENABLE_ID = True # return Challenge object (id + name) as a key instead of Strin
 PATH = "input.yml"
 
 """
-Post generated values to CTFd server
+Post generated values to CTFd server extended by personal challenge plugin
 ...
 Parameters
     ----------
@@ -67,7 +67,7 @@ with open(PATH) as file:
     variable_list = parser_var_file(file)
     generated_values = generate(variable_list, SEED, True)
 
-    upload_flags(URL, generated_values)
+    upload_flags(URL, generated_values) # use only with personal challenge plugin for CTFd, otherwise remove
 
     print(generated_values)
     # {1. generated_text: 'I always did something i was not ready to do. I think that’s how you grow. When there’s that moment of ', 3. generated_password: '6SBI1LEz', 10. generated_username: 'persona', 2. generated_port: '35608'}
