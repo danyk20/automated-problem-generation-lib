@@ -13,6 +13,7 @@ It supports only Python 3.6, and the above Python versions may work as well, how
 ## Basic Usage
 
 Open `demo.py`: 
+
 0. remove SEED - it's just optional parameter for testing
 1. update URL
 2. update USERNAME
