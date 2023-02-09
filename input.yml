@@ -1,0 +1,15 @@
+ generated_text:
+    type: text
+    challenge_id: 1
+
+ generated_password:
+    type: password
+    challenge_id: 3
+
+ generated_username:
+    type: username
+    challenge_id: 10
+
+ generated_port:
+    type: port
+    challenge_id: 2
